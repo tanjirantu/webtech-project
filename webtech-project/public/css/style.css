@@ -1,0 +1,755 @@
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -moz-margin-before: 0;
+    -moz-margin-after: 0;
+    margin-top: 0;
+}
+
+form ul {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -moz-margin-before: 0;
+    -moz-margin-after: 0;
+    margin-top: 0;
+}
+
+a { color: #2574A9; text-decoration: none; }
+
+ul {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+    -moz-margin-before: 0;
+    -moz-margin-after: 0;
+    -moz-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -moz-padding-start: 0px;
+}
+ul li { list-style: none; }
+
+td li {
+    list-style: none;
+}
+
+
+
+/*
+*******************************
+* =inputs
+*******************************
+*/
+input {
+    border-style: groove;
+    border: 1px solid #ececec
+}
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+
+}
+
+input::placeholder {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: lighter;
+  padding-left: 5px;
+  font-family: monospace;
+}
+
+select {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ececec;
+    border-style: none;
+    background: #ececec;
+    box-sizing: border-box;
+}
+
+/*
+*******************************
+* =buttons
+*******************************
+*/
+
+.btn-default {
+    min-width: 100px;
+    margin: 0 10px;
+    height: 40px;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    background: #3FC380;
+    color: #fff;
+}
+
+.btn-warning {
+    min-width: 100px;
+    margin: 0 10px;
+    height: 40px;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    background: #EC644B;
+    color: #fff;
+}
+
+
+/*
+*******************************
+* =table
+*******************************
+*/
+table { border-collapse: collapse; font-size: 14px; width: inherit; }
+table th, td { border: 1px solid #ececec; padding: 10px 10px; text-align: left; }
+table th { font-weight: 500; }
+table td { font-weight: 100; }
+td table { margin: 8px; }
+.registration-section table { width: 75%; }
+.table-title { height: 30px; text-align: left; padding-left: 15px; font-size: 16px; font-weight: normal; color: #fff; background: #363636; }
+.class-routine table:last-child { border-style: hidden;}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+.login-panel {
+    width: 400px;
+    height: 270px;
+    margin: auto;
+    position: relative;
+    top: 200px;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+    box-shadow: 0 1px .5px 1px #ececec;
+}
+
+.login-controls {
+    width: inherit;
+    height: 250px;
+    margin-top: 10px;
+    margin: auto;
+    margin-top: 25px;
+    float: left;
+}
+
+.login-controls input[type=submit] {
+    width: 100%;
+    height: 50px;
+    border-style: none;
+    background: #C8C8A9;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.login-controls input {
+    margin-bottom: 0;
+    height: 50px;
+}
+
+.login-title {
+    width: inherit;
+    height: 50px;
+    background: #363636;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    box-shadow: 0 1px .5px 1px #fff;
+}
+
+.login-controls {
+    margin-top: 0;
+}
+
+.login-controls .password-recovery-link {
+    padding-top: 20px;
+    padding-left: 140px;
+}
+
+
+.password-recovery-panel {
+    width: 400px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    top: 200px;
+}
+
+.header {
+    width: 100%;
+    height: 87px;
+    border: 1px solid #ececec;
+}
+
+.banner {
+    width: 30%;
+    height: inherit;
+    float: left;
+}
+
+.seperator {
+    width: 2px;
+    height: 68px;
+    background: #A9A9A9;
+    float: left;
+    margin-top: 10px;
+}
+
+.logo {
+    width: 26%;
+    height: inherit;
+    float: left;
+}
+
+.p-title {
+    width: 65%;
+    height: inherit;
+    float: left;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.h-title {
+    font-size: 26px;
+    font-weight: bolder;
+    color: #1F3A93;
+    text-transform: uppercase;
+}
+
+.logo img {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.banner h2 {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.nav {
+    width: 32%;
+    height: inherit;
+    float: right;
+}
+
+.nav ul {
+    padding-top: 25px;
+    margin-left: 70px;
+}
+
+.nav ul li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    color: #2574A9;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.nav a {
+    text-decoration: none;
+    font-family: "SourceSansProExtraLight",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+
+.nav ul li img {
+    width: 20px;
+    height: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.side-panel {
+    font-size: 15px;
+    font-style: normal;
+    width: 25%;
+    height: 668px;
+    background: #fff;
+    float: left;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.side-panel .sec-1 {
+    height: 280px;
+    border: 1px solid #ececec;
+}
+
+.side-panel-title {
+    width: 100%;
+    height: 40px;
+    background: #363636 ;
+    color: #fff;
+}
+
+.side-panel-title h2 {
+    padding-left: 30px;
+    padding-top: 5px;
+}
+
+.side-panel-control ul li a {
+    margin-left: 30px;
+}
+
+.side-panel-control ul li {
+    padding: 15px ;
+    border-bottom: 1px solid #ececec;
+}
+
+.side-panel-control ul li:hover {
+    background: #EEEEEE;
+}
+
+.main {
+    width: 70%;
+    float: left;
+    margin-top: 20px;
+    border: 1px solid #ececec;
+    padding: 10px;
+}
+
+.main form table {
+    width: 100%;
+}
+
+.main:after {
+    clear: both;
+    height: 0;
+    width: 100%;
+    content: '';
+    display: block;
+}
+
+.class-routine {
+    width: 100%;
+    margin: 12px auto;
+    border: .5px solid #e3e3e3;
+    border-radius: 5px;
+}
+
+.class-routine li { padding: 5px; }
+
+.class-routine li span { font-size: 12px; }
+
+.box-1 {
+    width: 225px;
+    height: 150px;
+    float: left;
+    margin: 10px;
+    position: relative;
+    border: 1px solid #ececec;
+    border-radius: 2px;
+}
+
+.box-3 {
+    width: 720px;
+    height: 210px;
+    float: left;
+    margin: 10px;
+    position: relative;
+    border: 1px solid #ececec;
+    border-radius: 2px;
+}
+
+.search-panel {
+    width: 720px;
+    height: 50px;
+    float: left;
+    margin: 10px;
+    position: relative;
+    border-radius: 2px;
+}
+
+.search-panel ul li {
+    display: inline;
+}
+
+.search-panel input[type=text] {
+    width: 400px;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 250px;
+    float: left;
+    position: relative;
+    left: 200px;
+}
+
+.profile-pic img {
+    width: 250px;
+    height: 250px;
+}
+
+.student-info {
+    width: 520px;
+    height: inherit;
+    float: left;
+    position: relative;
+    left: 250px;
+}
+
+.registration-section {
+    width: 75%;
+    height: inherit;
+    border: 1px solid #ececec;
+}
+
+.registration-control {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.navigation {
+    width: 35%;
+    height: inherit;
+    position: relative;
+    float: left;
+    left: 400px;
+}
+.navigation ul {
+    align-items: right;
+}
+
+.navigation li {
+    margin-top: 5px;
+    display: inline;
+}
+
+.control-panel {
+    width: 720px;
+    height: 50px;
+    float: left;
+    margin: 10px;
+    position: relative;
+    border: 1px solid #ececec;
+    border-radius: 2px;
+}
+
+.control-panel .controls {
+    width: 500px;
+    padding-top: 10px;
+    margin-left: 100px;
+}
+
+.course-title {
+    width: 300px;
+    height: 150px;
+    float: left;
+    padding-top: 10px;
+}
+
+.course-title p {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.course-title h4 {
+    font-weight: 400;
+}
+
+.course-title blockquote strong {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.time-schedule {
+    width: 400px;
+    height: 150px;
+    float: right;
+}
+
+.info-sec {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    float: left;
+    clear: both;
+    border-bottom: 2px solid #ececec;
+}
+
+.info-sec ul li {
+    display: inline;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.notes {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.notice {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.chat-box {
+    text-align:left;
+    margin-top: 10px;
+    margin-bottom:10px;
+    padding:10px;
+    background:#fff;
+    height:270px;
+    width:430px;
+    float: left;
+    border:1px solid #ACD8F0;
+}
+
+.message-box {
+    width:430px;
+    height: 60px;
+    padding:10px;
+    overflow: hidden;
+}
+
+.offered-courses-section {
+    width: 100%;
+}
+
+.offered-courses-section form {
+    width: -moz-fit-content;
+    height: auto;
+    float: right;
+}
+
+
+.notification-area {
+    width: 100%;
+    height: 100px;
+    float: left;
+    position: relative;
+    left: 200px;
+}
+
+
+.registration-notification {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+
+}
+
+.section-title {
+    width: inherit;
+    height: 45px;
+    background: #363636;
+    border-radius: 3px 3px 0 0;
+}
+
+.section-title h4 {
+    color: #fff;
+    padding-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.section-title h4 a {
+    color: #fff;
+}
+
+.student-list {
+    width: 100%;
+}
+
+.student-list form table {
+    width: 100%;
+}
+
+.navigation-panel {
+    width: 100%;
+    height: 50px;
+}
+
+.navigation-panel ul li {
+    display: inline;
+    padding-right: 20px;
+}
+
+.update-notice {
+    width: 300px;
+    height: 200px;
+    float: left;
+    background: red;
+    position: relative;
+}
+
+.update-notice textarea {
+    max-height: 200px;
+    max-width: 300px;
+    min-height: 200px;
+    min-width: 300px;
+    width: inherit;
+    height: inherit;
+    border: 1px solid #ececec;
+}
+
+.course-details {
+    background: #DADFE1;
+}
+
+.course-details li {
+    padding: 10px;
+}
+
+.courses-and-results {
+    width: 100%;
+}
+.courses-and-results table {
+    width: 100%;
+}
+
+.reg-info {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+#container {
+    width: 40%;
+    background: #fff;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+#chat {
+    width: 97%;
+    height: 500px;
+    padding-left: 20px;
+    float: left;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+::-webkit-moz-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-moz-scrollbar-thumb {
+    background: #FF0000;
+}
+
+#chat_data {
+    width: 100%;
+    margin: auto;
+    overflow: auto;
+}
+
+.message-box {
+    max-width: 420px;
+    min-width: 420px;
+    max-height: 100px;
+    min-height: 50px;
+    width: 100%;
+
+}
+
+.chat_box {
+    width: 74%;
+    height: 500px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    border: 1px solid #BDC3C7;
+}
+
+.message_panel {
+    width: 74%;
+    height: 55px;
+    position: relative;
+    float: left;
+    margin: auto;
+    border: 1px solid #336E7B;
+    clear: both;
+}
+
+.instant {
+    position: relative;
+    float: left;
+    max-width: 80%;
+    min-width: 80%;
+    max-height: 50px;
+    min-height: 50px;
+    padding: 0;
+    border: 1px solid #fff;
+    font-size: 18px;
+    outline: none;
+    resize: none;
+}
+
+.chat_sidebar {
+    width: 25%;
+    height: 500px;
+    margin-top: 20px;
+    float: right;
+    border-left: 1px solid #ececec;
+    position: relative;
+}
+
+.isAvailable{
+    width: 10px;
+    height: 10px;
+    background: red;
+}
+
+.btn2 {
+    position: relative;
+    float: right;
+    height: 55px;
+    width: 15%;
+    background: #F4B350;
+    color: white;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+
+.user-info  {
+    width: 200px;
+    height: 64px;
+    margin-left: 10px;
+    float: left;
+}

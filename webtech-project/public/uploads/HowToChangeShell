@@ -1,0 +1,14 @@
+1. install terminator
+# to change terminator theme 
+http://iterm2colorschemes.com/
+https://github.com/mbadolato/iTerm2-Color-Schemes/tree/master/terminator
+2. sudo gedit ~/.config/terminator/config
+3. paste the code in [global] section
+4. install fish
+# set fish as default
+5. chsh -s /usr/bin/fish
+#config fish
+6. sudo gedit ~/.config/fish/config.fish
+
+
+"omf install jump" to mark <folderName> and jump <folderName>
